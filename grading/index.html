@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Grade Factory!</h1>
+        <h2>Enter Grades for Student</h2>
+
+        <form id="gradeForm" action="calculate_grades.php" method="POST">
+            <input type="text" placeholder="Student Name" name="student_name" required>
+            <input type="hidden" name="final_grade" id="finalGradeInput">
+
+            <div class="tables">
+                <table id="inputTable">
+                    <thead>
+                        <tr>
+                            <th>Assessments:</th>
+                            <th>Grades:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Homework 1</td><td><input type="number" name="homework1" required></td>
+                        </tr>
+                        <tr>
+                            <td>Homework 2</td><td><input type="number" name="homework2" required></td>
+                        </tr>
+                        <tr>
+                            <td>Homework 3</td><td><input type="number" name="homework3" required></td>
+                        </tr>
+                        <tr>
+                            <td>Homework 4</td><td><input type="number" name="homework4" required></td>
+                        </tr>
+                        <tr>
+                            <td>Homework 5</td><td><input type="number" name="homework5" required></td>
+                        </tr>
+                        <tr>
+                            <td>Quiz 1</td><td><input type="number" name="quiz1" required></td>
+                        </tr>
+                        <tr>
+                            <td>Quiz 2</td><td><input type="number" name="quiz2" required></td>
+                        </tr>
+                        <tr>
+                            <td>Quiz 3</td><td><input type="number" name="quiz3" required></td>
+                        </tr>
+                        <tr>
+                            <td>Quiz 4</td><td><input type="number" name="quiz4" required></td>
+                        </tr>
+                        <tr>
+                            <td>Quiz 5</td><td><input type="number" name="quiz5" required></td>
+                        </tr>
+                        <tr>
+                            <td>Midterm</td><td><input type="number" name="midterm" required></td>
+                        </tr>
+                        <tr>
+                            <td>Final Project</td><td><input type="number" name="finalProject" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="submit" style="padding: 8px 16px; 
+            background-color: pink; 
+            color: white; border: none; 
+            border-radius: 5px; 
+            max-width: 200px;">
+                Compute Overall Score
+            </button>
+        </form>
+
+        <div id="result">
+            <h2>Final Grade:</h2>
+            <p id="finalGradeDisplay"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 800px; 
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+h1 {
+    color: pink; 
+    font-size: 1.8rem;
+    margin-bottom: 10px; 
+}
+
+h2 {
+    color: lightskyblue; 
+    font-size: 1.5rem;
+    margin-bottom: 20px; 
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.tables {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+table {
+    width: 45%; 
+    margin-top: 20px; 
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 12px;
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    background-color: pink; 
+    color: white; 
+}
+
+td input[type="number"] {
+    width: 100%; 
+    padding: 8px;  
+    box-sizing: border-box; 
+}
+
+button[type="submit"] {
+    margin-top: 20px; 
+    padding: 8px 16px;
+    background-color: pink;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    max-width: 200px;
+}
+
+button[type="submit"]:hover {
+    background-color: lightblue; 
+}
+
+#result {
+    margin-top: 20px;
+}
